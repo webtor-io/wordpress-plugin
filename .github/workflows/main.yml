@@ -23,7 +23,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'webtor.zip'
-          exclusions: '*.git* README.md'
+          exclusions: '*.git*'
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
