@@ -29,3 +29,8 @@ jobs:
           type: 'zip'
           filename: 'webtor.zip'
           exclusions: '*.git* README.md'
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "webtor.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
